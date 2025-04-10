@@ -1,0 +1,124 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/tik-tac-toe.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 20px;
+}
+#heading{
+    color: white;
+   
+}
+.container{
+    width: 450px;
+    height: 450px;
+    background-color: rgba(23, 28, 39, 0.803);
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgb(232, 235, 243);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap:20px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    
+    
+  
+}
+.cell{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(222, 233, 233, 0.992);
+    cursor: pointer;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: black;
+    font-size: 30px;
+    transform-origin: center;
+    
+  
+
+    
+
+   
+}
+#button{
+    height: 60px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(26, 198, 77, 0.803);
+    font-weight: 800;
+    font-size: larger;
+}
+#result{
+    color: rgb(207, 28, 28);
+    font-weight: 700;
+    font-size: 60px;
+    border-radius:1 1 10px rgba(rgba(16, 216, 46, 0));
+}
+@keyframes burst{
+    0%{
+    transform: scale(1);
+    background-color:rgba(225, 85, 85, 0.8);
+    box-shadow:0 0 30px rgba(rgb(225, 85, 85,0.8),0 0 60px rgba(225,0,0,0.5)); ;
+}
+50%{
+    transform: scale(1.1);
+    background-color: rgba(255, 165, 0, 0.9); 
+    box-shadow: 0 0 40px rgba(255, 165, 0, 0.9);
+}
+100%{
+    transform: scale(1);
+    background-color: rgba(255, 20, 147, 0.8); 
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.8);
+}
+}
+.winner{
+   
+    width: 9vw;
+    height: 9vh;
+    background-color: azure;
+    cursor: pointer;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: black;
+    font-size: 30px;
+    animation: burst 1.6s ease-in-out infinite;
+
+}
+
+@keyframes burst1{
+    0%{
+        transform: scale(1);
+        background-color:rgba(226, 24, 24, 0.467);
+        box-shadow: 0 0 20px rgba(226, 24, 24, 0.467);
+    }
+    50%{
+        transform: scale(1);
+        background-color:rgba(18, 224, 114, 0.467);
+        box-shadow: 0 0 20px rgba(226, 24, 24, 0.467);
+    }
+    100%{
+        transform: scale(1);
+        background-color:rgba(175, 75, 75, 0.467);
+        box-shadow: 0 0 20px rgba(226, 24, 24, 0.467);
+    }
+}
+.drawn{
+   
+    animation: burst1 2s ease-in-out infinite;
+
+}
+    
